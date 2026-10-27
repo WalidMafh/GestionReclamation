@@ -1,0 +1,238 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.reclamation-page {
+  min-height: 100vh;
+  background: #f4f6fa;
+  font-family: Arial, sans-serif;
+  color: #1e293b;
+}
+
+/* Header */
+
+.reclamation-header {
+  height: 76px;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6%;
+}
+
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-icon {
+  width: 42px;
+  height: 42px;
+  background: #1d4ed8;
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.header-brand h2 {
+  font-size: 17px;
+  margin: 0;
+}
+
+.header-brand p {
+  font-size: 12px;
+  color: #64748b;
+  margin: 4px 0 0;
+}
+
+.header-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.user-avatar {
+  width: 36px;
+  height: 36px;
+  background: #dbeafe;
+  color: #1d4ed8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* Main */
+
+.reclamation-container {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.page-heading {
+  margin-bottom: 30px;
+}
+
+.page-subtitle {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  color: #2563eb;
+}
+
+.page-heading h1 {
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+.page-heading p {
+  color: #64748b;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Card */
+
+.reclamation-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.04);
+}
+
+.card-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.step-number {
+  width: 42px;
+  height: 42px;
+  background: #eff6ff;
+  color: #2563eb;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.card-heading h3 {
+  margin: 2px 0 8px;
+  font-size: 18px;
+}
+
+.card-heading p {
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Form */
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.required {
+  color: #dc2626;
+  margin-left: 4px;
+}
+
+.form-group select {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #ffffff;
+  font-size: 14px;
+  color: #334155;
+  outline: none;
+  cursor: pointer;
+}
+
+.form-group select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.form-group small {
+  color: #64748b;
+  font-size: 12px;
+}
+
+/* Selection Messages */
+
+.selection-message {
+  margin-top: 25px;
+  padding: 18px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.selection-message p {
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+.production-message {
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  color: #1e40af;
+}
+
+.sinistre-message {
+  background: #fff7ed;
+  border: 1px solid #fed7aa;
+  color: #9a3412;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+  .reclamation-header {
+    padding: 0 16px;
+  }
+
+  .header-brand h2 {
+    font-size: 14px;
+  }
+
+  .header-user {
+    font-size: 12px;
+  }
+
+  .reclamation-container {
+    margin: 30px auto;
+    padding: 0 14px;
+  }
+
+  .page-heading h1 {
+    font-size: 24px;
+  }
+
+  .reclamation-card {
+    padding: 20px;
+  }
+}
